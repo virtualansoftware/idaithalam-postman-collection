@@ -16,7 +16,7 @@
 
 	<build>
 		<finalName>virtualan-contract-test-demo</finalName>
-		<sourceDirectory>src/main/java</sourceDirectory>
+		<sourceDirectory>src/test/java</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
