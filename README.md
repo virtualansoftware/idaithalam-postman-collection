@@ -1,2 +1,2 @@
 # idaithalam-contract-testing-demo
-Generate feature file, execute and create cucumber JSON and html report for the VIRTUALAN or POSTMAN collections. It Utilized for API contract testing and etc. Generate the feature file for VIRTUALAN collection, POSTMAN collection and EXECL. Used for API testing. Used for Contract testing. Used for Production Checkout. Used for Agile sprint end regression testing.
+Generate feature file, execute and create cucumber JSON and html report for the VIRTUALAN or POSTMAN collections. It Utilized for API contract testing and etc. Generate the feature file for VIRTUALAN collection, POSTMAN collection and EXCEL. Used for API testing. Used for Contract testing. Used for Production Checkout. Used for Agile sprint end regression testing.
