@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class ContractValidationTestExecution {
     @Test
-    public static void ContractValidationTest() {
+    public void testContractValidation() {
         //Initiate the contract testing
         //Generate feature file from POSTMAN Collection
         //Execute and Generate the HTML Cucumber report
