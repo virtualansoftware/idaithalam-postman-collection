@@ -13,12 +13,14 @@ pipeline {
         }
         stage ('Testing Stage') {
             steps {
+                
                     bat 'mvn test'
             }
         }
        
         stage('Generate HTML report') {
-           cucumber buildStatus: 'UNSTABLE',
+           steps { 
+              cucumber buildStatus: 'UNSTABLE',
                 reportTitle: 'My report',
                 fileIncludePattern: '**/*.json',
                 trendsLimit: 10,
@@ -28,6 +30,7 @@ pipeline {
                         'value': 'Firefox'
                     ]
                 ]
+           }
        }
         
        
