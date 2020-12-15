@@ -20,11 +20,13 @@ pipeline {
             steps {
                 bat 'mvn install'
             }
-        }   
-    }
-    post {
-        always {
-            cucumber '**/cucumber.json'
         }
+        
+        post {
+            always {
+                cucumber '**/cucumber.json'
+            }
+         }   
     }
+   
 }
