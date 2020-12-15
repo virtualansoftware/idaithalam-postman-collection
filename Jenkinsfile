@@ -22,11 +22,12 @@ pipeline {
             }
         }
         
-        post {
+       
+    }
+   
+     post {
             always {
                 cucumber '**/cucumber.json'
             }
          }   
-    }
-   
 }
