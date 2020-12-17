@@ -8,7 +8,7 @@
 	<name>idaithalam-contract-testing-demo</name>
 	<version>1.0.0-SNAPSHOT</version>
 	<properties>
-		<cucumblan.version>1.0.2</cucumblan.version>
+		<idaithalam.version>1.0.1</idaithalam.version>
 		<java.version>1.8</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>io.virtualan</groupId>
 			<artifactId>idaithalam</artifactId>
-			<version>1.0.0</version>
+			<version>${idaithalam.version}</version>
 		</dependency>
 
 	</dependencies>
