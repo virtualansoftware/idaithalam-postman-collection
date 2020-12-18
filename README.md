@@ -12,11 +12,13 @@ Currently It supports generate Feature files for **POSTMAN Collection** and Virt
 This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as respective domain specific language which helps you to describe API/business behavior without the need to go into detail of implementation. 
 
 ## Steps to create POSTMAN Collection
-* Most of the common use case, You can execute as Regression test suite for the test case executed manually via POSTMAN.
-* Run the testcase via POSTMAN and store the response as Example in the POSTMAN.
-* Run all the apis via POSTMAN for all the test cases and capture and save the response. 
-* Export all the API request and Response as POSTMAN collection.
-* POSTMAN Collection can be passed as Input as Idaithalam.
+* Create a collection
+* Under the created collection, create a API request
+* Add the GET URL for the API testing
+* After providing the input information for the API, run the API by clicking 'SEND'
+* Save the API request via 'save example' in the postman
+* Repeat the above steps to create all the API request
+* Export the created API request/response as Postman collection
 
 ### Demo POSTMAN Collection: 
 [https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature](https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature)
