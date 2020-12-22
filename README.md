@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/virtualansoftware/idaithalam-contract-testing-demo.svg?branch=master)](https://travis-ci.com/virtualansoftware/idaithalam-contract-testing-demo)
 
-# What is Idaithalam: Low code Automation Framework.
+# What is Idaithalam:
 
 Idaithalam is a Cucumber feature file generation product.
 
