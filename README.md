@@ -4,11 +4,11 @@
 
 # What is Idaithalam:
 
-Idaithalam is a Cucumber feature file generation product.
+Idaithalam is a NoCode/LowCode Api test Automation Framework.
 
-As a user: You need to export the POSTMAN Collection and pass to Idaithalam. **NO CODING at all** 
+As a user: You need to export the POSTMAN Collection and pass to Idaithalam. **NO CODING required** 
 
-Currently It supports generate Feature files for **POSTMAN Collection** and Virtualan Collection and Excel format(Coming Soon). 
+Currently It supports generate Feature files for **POSTMAN Collection** and Virtualan Collection and Excel format. 
 This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as respective domain specific language which helps you to describe API/business behavior without the need to go into detail of implementation. 
 
 ## Steps to create POSTMAN Collection
@@ -21,22 +21,22 @@ This will covert REST APIs based on POST, GET, PUT, DELETE and PATCH action as r
 * Export the created API request/response as Postman collection
 
 ### Demo POSTMAN Collection: 
-[https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature](https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/conf/virtualan-contract.feature)
 
 ### Auto Generated Feature file: 
-[https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/src/test/resources/idaithalan.postman_collection.json](https://github.com/virtualansoftware/idaithalam-contract-testing-demo/blob/master/src/test/resources/idaithalan.postman_collection.json) 
+[https://github.com/virtualansoftware/idaithalam-api-postman-collection-testing/blob/master/src/test/resources/idaithalan.postman_collection.json](https://github.com/virtualansoftware/idaithalam-api-postman-collection-testing/blob/master/src/test/resources/idaithalan.postman_collection.json) 
 
 ### Demo Code Base:
-[https://github.com/virtualansoftware/idaithalam-contract-testing-demo](https://github.com/virtualansoftware/idaithalam-contract-testing-demo)
+[https://github.com/virtualansoftware/idaithalam-api-postman-collection-testing](https://github.com/virtualansoftware/idaithalam-api-postman-collection-testing)
 
 ### How to Integrate: 
 
 1. cucumblan.properties  - Should be added in classpath
 
 ```
-service.api=https://live.virtualandemo.com              # Service Endpoint URL
-virtualan.data.load=idaithalan.postman_collection.json  # Collection file should be in CLASSPATH. added POSTMAN Collection  
-virtualan.data.type=POSTMAN                             # Collection Type.  POSTMAN, VIRTUALAN, EXCEL
+service.api=https://live.virtualandemo.com                 # Service Endpoint URL
+virtualan.data.load=idaithalan.postman_collection.json     # Collection file should be in CLASSPATH. added POSTMAN Collection  
+virtualan.data.heading=API testing                         # heading
+virtualan.data.type=POSTMAN                                # Collection Type.  POSTMAN, VIRTUALAN, EXCEL
 
 ```
 2.  "conf" directory: 
@@ -47,14 +47,14 @@ virtualan.data.type=POSTMAN                             # Collection Type.  POST
 3. You can keep cucumblan.properties and Collection files in this location.
 
 Example: 
-https://github.com/virtualansoftware/idaithalam-contract-testing-demo/tree/master/conf 
+https://github.com/virtualansoftware/idaithalam-api-postman-collection-testing/tree/master/conf 
 ```
 3. Code to Invoke the Auto Generation:
 ```
 //Initiate the contract testing
 //Generate feature file from POSTMAN Collection
 //Execute and Generate the HTML Cucumber report
-IdaithalamExecutor.validateContract("Pet API Production Checkout");
+IdaithalamExecutor.validateContract("REPORT HEADING");
 
 ```
 
