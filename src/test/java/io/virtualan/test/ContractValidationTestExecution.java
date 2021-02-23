@@ -12,7 +12,7 @@ public class ContractValidationTestExecution {
         //Execute and Generate the HTML Cucumber report
         int status =0 ;
         try {
-            status = IdaithalamExecutor.validateContract("Pet API Production Checkout");
+            status = IdaithalamExecutor.validateContract("Scriptless API Testing / NO-OR-Low code Automation Framework");
             System.out.println(status);
             if(status != 0) {
                 Assert.assertTrue(false);
