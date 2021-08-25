@@ -7,7 +7,7 @@ apiExecutor:
     cucumblanProperties:
       service.api: https://live.virtualandemo.com
       service.api.xml: https://www.w3schools.com
-      virtualan.data.load: idaithalan.postman_collection.json;virtualan-xml.json;
+      virtualan.data.load: idaithalan_v1.0.json;virtualan-xml.json;
       virtualan.data.heading: PETAPI-Testing;SOAP-Temperature-Testing;
       virtualan.data.type: POSTMAN
   - reportTitle: "API Testing SOAP POSTMAN Collection 2 with 1 file"

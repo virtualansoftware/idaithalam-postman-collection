@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "143fb045-6444-43d7-b735-c75ab9a1a31b",
+		"name": "idaithalan-o",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "read pet api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{hostname}}/api/pets/10000",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"pets",
+						"10000"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "read pet api",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{hostname}}/api/pets/10000",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"api",
+								"pets",
+								"10000"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "3165c1c757d98d64f6508639fd2e0fd9;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 01:55:56 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"string\"\n    },\n    \"id\": 10000,\n    \"name\": \"Doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"status\": \"available\",\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "update pet api",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": {\r\n        \"id\": 600,\r\n        \"name\": \"Doggie\"\r\n    },\r\n    \"id\": 600,\r\n    \"name\": \"None-PUT\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"status\": \"available\",\r\n    \"tags\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"string\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/pets/600",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"pets",
+						"600"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update pet api",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\": {\n        \"id\": 6003,\n        \"name\": \"Doggie\"\n    },\n    \"id\": 6003,\n    \"name\": \"None-PUT\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"status\": \"available\",\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{hostname}}/api/pets/6003",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"api",
+								"pets",
+								"6003"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "f39e21da88fdc3f59c5c5c4deb251374;o=1"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 01:58:50 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "223"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 6003,\n        \"name\": \"string\"\n    },\n    \"id\": 6003,\n    \"name\": \"None-PUT\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"status\": \"available\",\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "patch pet api",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": {\r\n        \"id\": 600,\r\n        \"name\": \"Doggie\"\r\n    },\r\n    \"id\": 600,\r\n    \"name\": \"None-PUT\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"status\": \"available\",\r\n    \"tags\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"string\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/pets/600",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"pets",
+						"600"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "patch pet api",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"string\"\r\n  },\r\n  \"id\": 0,\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"status\": \"available\",\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ]\r\n}\r\n"
+						},
+						"url": {
+							"raw": "{{hostname}}/api/pets/101",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"api",
+								"pets",
+								"101"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "6c5d3640bdaf9ee62482d09dac5dc817"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 02:04:07 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "215"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"string\"\n    },\n    \"id\": 0,\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"status\": \"available\",\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "create pet api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\": {\r\n        \"id\": 100,\r\n        \"name\": \"German Shepherd\"\r\n    },\r\n    \"id\": 101,\r\n    \"name\": \"Rocky\",\r\n    \"photoUrls\": [\r\n        \"string\"\r\n    ],\r\n    \"status\": \"available\",\r\n    \"tags\": [\r\n        {\r\n            \"id\": 101,\r\n            \"name\": \"brown\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "{{hostname}}/api/pets",
+					"host": [
+						"{{hostname}}"
+					],
+					"path": [
+						"api",
+						"pets"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create pet api",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"category\": {\r\n    \"id\": 100,\r\n    \"name\": \"string\"\r\n  },\r\n  \"id\": 100,\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"status\": \"available\",\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"string\"\r\n    }\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "{{hostname}}/api/pets",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"api",
+								"pets"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "e01f0502543de812c16aacf78f589833"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 01:59:45 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "219"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"category\": {\n        \"id\": 100,\n        \"name\": \"string\"\n    },\n    \"id\": 100,\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"string\"\n    ],\n    \"status\": \"available\",\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"string\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "risk calculations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "risk calculations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"birthday\" : \"1918-10-24\",\r\n  \"postalCode\" : \"60563\"\r\n}"
+						},
+						"url": {
+							"raw": "{{hostname}}/api/riskfactor/compute",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"api",
+								"riskfactor",
+								"compute"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-Cloud-Trace-Context",
+							"value": "aa9edee40613c9feb02a42b5ca0fd4a7"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 02:02:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Google Frontend"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						}
+					],
+					"cookie": [],
+					"body": "65"
+				}
+			]
+		}
+	]
+}
