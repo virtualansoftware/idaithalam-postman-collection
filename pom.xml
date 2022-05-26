@@ -3,19 +3,19 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.virtualan</groupId>
-	<artifactId>idaithalam-contract-testing-demo</artifactId>
+	<artifactId>idaithalam-contract-postman</artifactId>
 	<packaging>jar</packaging>
-	<name>idaithalam-contract-testing-demo</name>
+	<name>idaithalam-postman</name>
 	<version>1.0.0-SNAPSHOT</version>
 	<properties>
-		<idaithalam.version>1.3.10</idaithalam.version>
-		<java.version>1.8</java.version>
+		<idaithalam.version>1.7.0</idaithalam.version>
+		<java.version>11</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 
 	<build>
-		<finalName>virtualan-contract-test-demo</finalName>
+		<finalName>virtualan-postman</finalName>
 		<sourceDirectory>src/test/java</sourceDirectory>
 		<plugins>
 			<plugin>

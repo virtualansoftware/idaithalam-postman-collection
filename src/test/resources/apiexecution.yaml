@@ -3,21 +3,21 @@ timeout:  30000
 apiExecutor:
   - reportTitle: "API Testing POSTMAN Collection 1 with 2 files"
     env: dev
-    outputDir: target/postman/1
+    outputDir: target/postman/simple
+    virtualanSpecPath: virtualan-collection/postman/simple
     cucumblanProperties:
       service.api: https://live.virtualandemo.com
-      service.api.xml: https://www.w3schools.com
-      virtualan.data.load: idaithalan_v1.0.json;virtualan-xml.json;
-      virtualan.data.heading: PETAPI-Testing;SOAP-Temperature-Testing;
+      virtualan.data.load: idaithalan_v1.0.json;
+      virtualan.data.heading: PETAPI-Testing;
       virtualan.data.type: POSTMAN
-  - reportTitle: "API Testing SOAP POSTMAN Collection 2 with 1 file"
+  - reportTitle: "API Testing POSTMAN Collection 2 with 1 file"
     env: dev
-    outputDir: target/postman/2
+    outputDir: target/postman/variables
+    virtualanSpecPath: virtualan-collection/postman/variables
     cucumblanProperties:
-      service.api: https://live.virtualandemo.com
-      service.api.xml: https://www.w3schools.com
-      virtualan.data.heading: Idaithalan SOAP Postman_Collection_report2_1
-      virtualan.data.load: virtualan-xml.json
+      service.api: https://live.virtualandemo.com/api
+      virtualan.data.heading: Idaithalan Postman_Collection_report2_1
+      virtualan.data.load: variables.json
       virtualan.data.type: POSTMAN
     excludeProperties:
       .*: IGNORE
