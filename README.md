@@ -1,6 +1,6 @@
 # Idaithalam
 
-[![Build Status](https://travis-ci.com/virtualansoftware/idaithalam-contract-testing-demo.svg?branch=master)](https://travis-ci.com/virtualansoftware/idaithalam-contract-testing-demo)
+   [![Maven Central](https://img.shields.io/maven-central/v/io.virtualan/idaithalam.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22io.virtualan%22%20AND%20a:%22idaithalam%22)  [![Build status](https://ci.appveyor.com/api/projects/status/bs4cmqvvlj477fhe/branch/master?svg=true)](https://ci.appveyor.com/project/elans3/idaithalam/branch/master)
 
 # What is Idaithalam:
 
